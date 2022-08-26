@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+</head>
+<link rel= "stylesheet" href="amazonCSS.css">
+<script src="https://kit.fontawesome.com/62b460f7d3.js" crossorigin="anonymous"></script>
+<style>
+li{
+    
+    padding-left: 20px;
+   
+}
+
+a:active{
+
+    color : green;
+}
+
+li:active {
+ color : green;
+}
+
+/* li:hover {
+color :blue;
+border-color: black;
+border-style :groove;
+border-width: 2px;
+} */
+
+li:visited{
+color :magenta;
+
+}
+
+
+
+.animator{
+    animation-name: slidingfunc;
+        animation-duration: 09s;
+        animation-direction: normal;
+        animation-timing-function:ease;
+        animation-iteration-count: infinite;
+         width:1350px;
+         height:400px;
+         background-image: url("elon.jpg");
+
+}
+      @keyframes slidingfunc {
+        0% {
+          background-position: 0 0;
+        }
+        16.66% {
+          background-position: -700px 0;
+        }
+        33.32% {
+          background-position: -700px 0;
+        }
+        49.98% {
+          background-position: -1000px 0;
+        }
+        66.64% {
+          background-position: -1400px 0;
+        }
+        83.30% {
+          background-position: -1600px 0;
+        }
+        100% {
+          background-position: 0 0;
+        }
+      }
+
+
+
+
+
+
+
+
+.drp .drpbtn {
+   
+  border: none;
+  outline: none;
+ 
+  padding: 15px 15px;
+  background-color: inherit;
+  font-family: inherit;
+  overflow: hidden;
+ 
+}
+
+ .drp:hover .drpbtn {
+  background-color: aquamarine;
+}
+
+.drplist {
+  display: none;
+  position: relative;
+  background-color:rgb(88, 128, 147);
+  min-width: 150px;
+  box-shadow: 0px 9px 15px 0px rgba(0,0,0,0.2);
+  z-index: 9;
+}
+
+.drplist a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.drp:hover .drplist {
+  display: block;
+}
+
+
+
+.overlaying {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.box:hover .overlaying {
+  bottom: 0;
+  height: 100%;
+}
+
+
+.inner {
+  color: white;
+  font-size: 25px;
+  position: relative;
+  top: 60%;
+  left: 60%;
+ 
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.box{
+  position: relative;
+  width: 100%;
+}
+</style>
+<body style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+    
+    <header style="background-color: aquamarine; height:70px;" class="top">
+ <ul style="list-style-type: none; padding-left: 5px;">
+    <li style="float: left; height:70px; width:100px; padding-left: 0px;">
+<img src="amzing.jpg" style="height:60px; width:100px; padding-top:05px; padding-bottom: 05px;">
+    </li>
+    <li style="width:70px; padding-top: 5px; float:left; padding-right: 20px; padding-bottom: 5px;">
+     Deliver To <b style="font-size: 20px;"> <i class="fa-solid fa-location-dot"></i>India</b>
+    </li>
+    <li style="float:left; border-style: initial;">
+        <form style="padding-top:15px; padding-left:0px;">
+        <input type="search" style="width:600px; height:40px;"><input type="submit" style="height:40px;">
+        </form>
+        
+    </li>
+    <li style="float:left;">
+<img src="download.jpg" style="width:40px; height:30px; padding-top:25px;">
+    </li>
+    <li style="width:120px; padding-top: 0px; padding-top: 0px; float:left; height:65px; padding-right: 5px;">
+<p style="line-height: 20px;">Hello, Sign in <b style="font-size: 15px;">Accounts & Lists</b></p>
+    </li>
+    <li style="width:71px; padding-top: 12px; float:left; padding-right: 15px; padding-bottom: 12px;;">
+    Returns <b style="font-size: 16.5px;">& Orders</b>
+    </li>
+    <li style="float:left; padding-left: 0px;">
+        <img src="cart.jpg" style=" width:90px; height:50px; padding-top: 10px;">
+    </li>
+ </ul>
+    </header>
+    <div style="background-color: wheat; height:40px; margin-top:-15px; ">
+        <ul style="list-style-type: none; padding-top: 10px; padding-left: 5px; font-size:16px; ">
+    <b>    
+        <li style="float:left; padding-right: 25px; border:none;">
+           <div class="drp" style="margin-top:-15px;">
+                <button class="drpbtn">
+                    <i class="fa-solid fa-list-ul"></i> <b style="font-size: 16px;">All</b>
+                 
+                </button>
+                <div class="drplist">
+                  <a href="#">Tablet</a>
+                  <a href="#">Laptop</a>
+                  <a href="#">Various Options</a>
+                  <a href="#">Phone</a>
+                  <a href="#">Smart Watch</a>
+                  <a href="#">Clock</a>
+                </div>
+              </div> 
+        </li>
+        <li style="float:left; padding-right: 25px; border:none;">
+         <div class="drp" style="margin-top:-15px;">
+            <button class="drpbtn">
+                <b style="font-size: 16px;">Today's Deal</b>
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="drplist">
+              <a href="#">Latest Apps</a>
+              <a href="#">Free Delivery</a>
+              <a href="#">Price Negotiation</a>
+              <a href="#">Lorem, ipsum dolor.</a>
+              <a href="#">withdraw payment</a>
+              
+            </div>
+          </div> 
+        </li>
+        <li style="float:left; padding-right: 25px; border:none;">
+            <a href="amazonElectronics.htm">Electronics</a>
+        </li> 
+        <li style="float:left; padding-right: 25px; border:none;">
+        <a href="amazonMobile.htm">Mobile</a>
+        </li>
+        <li style="float:left; padding-right: 25px; border:none;">
+        Gift Card
+        </li>
+        <li style="float:left; padding-right: 25px; border:none;">
+        Sell
+        </li>
+        </b>
+        </ul>
+    </div>
+   <div class="animator" style="margin-left: -10px;"></div>
+    <div style="background-color:aquamarine; margin-left:30px; margin-right: 30px; margin-top: -100px; z-index: 10; position: relative;">
+        <p style="text-align:center; padding-top: 10px; padding-bottom: 10px;"><marquee>You are on alpha.com You can also shop on Amazon India for millions of products with fast local delivery. Click here to go to alpha.com </marquee></p>
+
+    </div>
+<div style="background-color:aquamarine; margin-left:30px; margin-right: 30px; margin-top : 65px; height :450px; width:1270px;  position: relative; z-index: 10;">
+<div style="background-color: wheat; height:450px; width:290px;">
+<p style="padding-top:15px; padding-left: 30px;"><b style="font-size:19px;">Gaming Accessories</b></p><div class="0">
+<hr>
+<img src="gaming.jpg" style="width: 290px; height:150px;">
+
+Keyboards
+<img src="gmhead.jpg" style="width: 290px; height:150px;">
+<p style="margin-top:0px;">Headsets</p>
+<a href="#" style="margin-left:100px;"><p style="margin-top: -30px; text-align:center;">Shop Now</p></a>
+</div>
+<div style="background-color: wheat; height:450px; width:290px; margin-left:320px; margin-top: -460px;">
+   <p style="padding-top:15px; padding-left: 30px;"> <b style="font-size:19px;">Shopping Accessories</b> </p>
+   <hr>
+ 
+   <img src="Video.jpg" style="width: 290px; height:150px;">
+
+
+Video Games
+<img src="computers.jpg" style="width: 290px; height:150px;">
+<p style="margin-top:0px;">Computer & Accessories</p>
+
+<a href="#" style="margin-left:100px;"><p style="margin-top: -30px; text-align:center;">Shop Now</p></a>
+</div>
+<div style="background-color: wheat; height:450px; width:290px; margin-left: 650px; margin-top:-465px;">
+<p style="padding-top:15px; padding-left: 30px;"><b style="font-size:19px;">Dresses</b></p>
+<hr>
+<div class="box">
+<img src="lap.jpg" style="width:290px; height:320px; ">
+    <div class="overlaying">
+        <div class="inner" style="margin-left:-50px;"><b>Rs 70000</b></div>
+      </div>
+    </div>
+     
+  
+
+    
+<a href="#" ><p style="text-align: center; margin-top: 20px;">Shop Now</p></a>
+</div>
+<div style="background-color: wheat; height:200px; width:290px; margin-left:979px; margin-top: -465px;">
+<p style="margin-left:30px; margin-right:30px; padding-top:15px;"><b style="font-size:25px;">Sign in for the best experience</b></p>
+<button style="margin-left:30px; margin-right:30px; height:50px; width:220px; font-size: 20px; padding-top: 15px; padding-bottom: 20px;"><a href="AmazonSignUp.htm">Sign in Securely</a></button>
+</div>
+<DIV style="background-color: wheat; height:228px; width:290px; margin-left:979px; margin-top: 20px;">  
+  <img src="la.jpg" style=" height:228px; width:290px;">
+
+</DIV>
+</div>
+
+
+
+
+</div>
+<div style="background-color:aquamarine; margin-left:30px; margin-right: 30px; margin-top: 0px; height :450px; width:1270px; margin-top:-00px; position: relative; z-index: 10;">
+<div style="background-color: wheat; height:450px; width:290px;">
+<p style="padding-top:15px; padding-left: 30px;"><b style="font-size:19px;">Gaming Accessories</b></p>
+<hr>
+
+<img src="lap1.jpg" style="width: 290px; height:150px;">
+Notebooks
+<img src="lap2.jpg" style="width: 290px; height:150px;">
+<p style="margin-top:0px;">Food Storage</p>
+<a href="#" style="margin-left:100px;"><p style="margin-top: -30px; text-align:center;">Shop Now</p></a>
+
+</div>
+<div style="background-color: wheat; height:450px; width:290px; margin-left:320px; margin-top: -465px;">
+   <p style="padding-top:15px; padding-left: 30px;"><b style="font-size:19px;">Gaming Accessories</b></p>
+<hr>
+<img src="CA.jpg" style="width:290px; height:320px; ">
+<div class="overlaying">
+    <div class="inner" style="margin-left:-50px;"><b>Rs 70000</b></div>
+  </div>
+</div>
+<!-- <p style="margin-top:0px;">Computer & Accessories</p> -->
+<a href="#" ><p style="text-align: center; margin-top: -05px;">Shop Now</p></a>
+</div>
+<div style="background-color: wheat; height:450px; width:290px; margin-left: 650px; margin-top:-465px;">
+<p style="padding-top:15px; padding-left: 30px;"><b style="font-size:19px;">Gaming Accessories</b></p>
+<hr><div class="box">
+<img src="lap3.jpg" style="width:290px; height:320px; ">
+<div class="overlaying">
+    <div class="inner" style="margin-left:-50px;"><b>Rs 70000</b></div>
+  </div>
+</div>
+<a href="#" ><p style="text-align: center; margin-top: 20px; margin-left: -10px;">See all the deals</p></a>
+
+
+</div>
+<div style="background-color: wheat; height:450px; width:290px; margin-left:979px; margin-top: -467px;">
+    <p style="padding-top:15px; padding-left: 30px;"><b style="font-size:19px;">Gaming Accessories</b></p>
+    <hr><div class="box">
+    <img src="lap2.jpg" style="width:290px; height:320px; ">
+    <div class="overlaying">
+        <div class="inner" style="margin-left:-50px;"><b>Rs 70000</b></div>
+      </div>
+    </div>
+<a href="#" ><p style="text-align: center; margin-top: 20px;">Learn More</p></a>
+</div>
+
+</div>
+
+
+
+
+
+
+<div style="background-color:aquamarine; margin-left:30px; margin-right: 30px; margin-top: 0px; height :450px; width:1270px; margin-top:-00px; position: relative; z-index: 10;">
+<div style="background-color: wheat; height:450px; width:290px;">
+<p style="padding-top:15px; padding-left: 30px;"><b style="font-size:19px;">Gaming Accessories</b></p>
+<hr>
+
+<img src="lap10.jpg" style="width: 290px; height:150px;">
+Notebooks
+<img src="lap9.jpg" style="width: 290px; height:150px;">
+<p style="margin-top:0px;">Food Storage</p>
+<a href="#" style="margin-left:100px;"><p style="margin-top: -30px; text-align:center;">Shop Now</p></a>
+
+</div>
+<div style="background-color: wheat; height:450px; width:290px; margin-left:320px; margin-top: -465px;">
+   <p style="padding-top:15px; padding-left: 30px;"><b style="font-size:19px;">Gaming Accessories</b></p>
+<hr>
+<img src="gaming.jpg" style="width: 290px; height:150px;">
+<p>Espresso Machines</p>
+<div style="height:150px;">
+<img src="deal.jpg" style="width: 140px; height:120px; margin-left:143px; margin-top:0px;">
+<img src="airt.jpg" style="width: 140px; height:120px; margin-left:0px;margin-bottom:200px; margin-top: -125px;">
+</div>
+<div><p style="margin-top:-30px;">Headsets<p style="margin-top:-33px; margin-left:140px;">Accessories</p></p></div>
+
+<a href="#" ><p style="text-align: center; margin-top: -10px;">Shop Now</p></a>
+</div>
+<div style="background-color: wheat; height:450px; width:290px; margin-left: 650px; margin-top:-465px;">
+<p style="padding-top:15px; padding-left: 30px;"><b style="font-size:19px;">Gaming Accessories</b></p>
+<hr><div class="box">
+<img src="lap6.png" style="width:290px; height:320px; ">
+<div class="overlaying">
+    <div class="inner" style="margin-left:-50px;"><b>Rs 70000</b></div>
+  </div>
+</div>
+<a href="#" ><p style="text-align: center; margin-top: 20px; margin-left: -10px;">See All the Deals</p></a>
+
+
+</div>
+<div style="background-color: wheat; height:450px; width:290px; margin-left:979px; margin-top: -467px;">
+    <p style="padding-top:15px; padding-left: 30px;"><b style="font-size:19px;">Gaming Accessories</b></p>
+    <hr><div class="box">
+    <img src="lap2.jpg" style="width:290px; height:320px; ">
+    <div class="overlaying">
+        <div class="inner" style="margin-left:-50px;"><b>Rs 70000</b></div>
+      </div>
+    </div>
+<a href="#" ><p style="text-align: center; margin-top: 20px;">Learn More</p></a>
+</div>
+
+</div>
+
+
+
+
+
+
+<div style="background-color:aquamarine; margin-left:30px; margin-right: 30px; margin-top: 0px; height :450px; width:1270px; margin-top:-00px; position: relative; z-index: 10;">
+<div style="background-color: wheat; height:450px; width:290px;">
+<p style="padding-top:15px; padding-left: 30px;"><b style="font-size:19px;">Gaming Accessories</b></p>
+<hr>
+
+<img src="lap5.png" style="width: 290px; height:150px;">
+Notebooks
+<img src="food.jpg" style="width: 290px; height:150px;">
+<p style="margin-top:0px;">Food Storage</p>
+<a href="#" style="margin-left:100px;"><p style="margin-top: -30px; text-align:center;">Shop Now</p></a>
+
+</div>
+<div style="background-color: wheat; height:450px; width:290px; margin-left:320px; margin-top: -465px;">
+   <p style="padding-top:15px; padding-left: 30px;"> <b style="font-size:19px;">Gaming Accessories</b> </p>
+<hr>
+<img src="lap10.jpg" style="width: 290px; height:150px;">
+<p>Espresso Machines</p>
+<div style="height:150px;">
+<img src="deal.jpg" style="width: 140px; height:120px; margin-left:143px; margin-top:0px;">
+<img src="lap8.png" style="width: 140px; height:120px; margin-left:0px;margin-bottom:200px; margin-top: -125px;">
+</div>
+<div><p style="margin-top:-30px;">Headsets<p style="margin-top:-33px; margin-left:140px;">Accessories</p></p></div>
+
+<a href="#" ><p style="text-align: center; margin-top: -10px;">Shop Now</p></a>
+</div>
+<div style="background-color: wheat; height:450px; width:290px; margin-left: 650px; margin-top:-465px;">
+<p style="padding-top:15px; padding-left: 30px;"><b style="font-size:19px;">Gaming Accessories</b></p>
+<hr>
+<img src="lap7.png" style="width:290px; height:320px; ">
+<div class="overlaying">
+    <div class="inner" style="margin-left:-50px;"><b>Rs 22500</b></div>
+  </div>
+</div>
+<!-- <a href="#" ><p style="text-align: center; margin-top: 20px; margin-left: -10px;">See All the Deals</p></a> -->
+
+</div>
+
+
+<div style="background-color: wheat; height:450px; width:290px; margin-left:979px; margin-top: -467px;">
+    <p style="padding-top:15px; padding-left: 30px;"><b style="font-size:19px;">Gaming Accessories</b></p>
+    <hr><div class="box">
+    <img src="lap2.jpg" style="width:290px; height:320px; ">
+    <div class="overlaying">
+        <div class="inner" style="margin-left:-50px;"><b>Rs 70000</b></div>
+      </div>
+    </div>
+<a href="#" ><p style="text-align: center; margin-top: 20px;">Learn More</p></a>
+</div>
+
+
+
+<div style="background-color: wheat; height:40px; margin-top:0px; ">
+    <ul style="list-style-type: none; padding-top: 10px; padding-left: 5px;">
+    <li style="float:left; padding-right: 25px;">
+      All
+    </li>
+    <li style="float:left; padding-right: 25px;">
+     Today's Deal
+    </li>
+    <li style="float:left; padding-right: 25px;">
+     Customer Service
+    </li>
+    <li style="float:left; padding-right: 25px;">
+    Registry
+    </li>
+    <li style="float:left; padding-right: 25px;" >
+    Gift Card
+    </li>
+    <li style="float:left; padding-right: 25px;">
+    Sell
+    </li>
+    </ul>
+</div>
+<div style="height :220px;">
+    <ul style="list-style-type : none; line-height: 25px; margin-top: 70px; margin-left: 120px;">
+        <li style="font-size: 20px;"><b>Lorem ipsum dolor sit.</b></li>
+        <li>lorem</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum dolor.</li>
+        <li>lorem</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum dolor.</li>
+    </ul>
+
+    <ul style="list-style-type : none; line-height: 25px; margin-top: -190px; margin-left: 380px;">
+        <li style="font-size: 20px;"><b>Lorem ipsum dolor sit.</b></li>
+        <li>lorem</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum dolor.</li>
+        
+    </ul>
+
+    <ul style="list-style-type : none; line-height: 25px; margin-top: -120px; margin-left: 650px;">
+        <li style="font-size: 20px;"><b>Lorem ipsum dolor sit.</b></li>
+        <li>lorem</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum dolor.</li>
+        <li>lorem</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem, ipsum dolor.</li>
+        <li>lorem</li>
+    </ul>
+
+    <ul style="list-style-type : none; line-height: 25px; margin-top: -240px; margin-left: 900px;">
+        <li style="font-size: 20px;"><b>Lorem ipsum dolor sit.</b></li>
+        <li>lorem</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum dolor.</li>
+        <li>lorem</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem,</li>
+        
+    </ul>
+</div>
+</body>
+</html>

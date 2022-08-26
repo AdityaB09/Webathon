@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+</head>
+<link rel= "stylesheet" href="amazonCSS.css">
+<script src="https://kit.fontawesome.com/62b460f7d3.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/62b460f7d3.js" crossorigin="anonymous"></script>
+<style>
+
+    .flipper{
+
+
+background-color: transparent;
+
+    }
+ li{
+    
+    padding-left: 20px;
+   
+    
+}
+
+/*a:active{
+
+    color : green;
+}
+
+li:active {
+ color : green;
+}
+
+/* li:hover {
+color :blue;
+border-color: black;
+border-style :groove;
+border-width: 2px;
+} */
+
+/* li:visited{
+color :magenta;
+
+}
+
+div:hover {
+background-color: lightgreen;
+
+}
+body:hover{
+background-color: blanchedalmond;
+
+} */ 
+
+/* .resize:hover{
+
+    transform:scale(1.1);
+
+} */
+
+.flipper {
+
+    perspective: 1000px;
+    background-color: transparent;
+}
+.flipper:hover .flipinner {
+  transform: rotateY(180deg);
+}
+
+
+.flipfrontend, .flipbackend {
+position: absolute;
+  
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flipbackend {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.drp .drpbtn {
+   
+   border: none;
+   outline: none;
+  
+   padding: 15px 15px;
+   background-color: inherit;
+   font-family: inherit;
+   overflow: hidden;
+  
+ }
+ 
+  .drp:hover .drpbtn {
+   background-color: aquamarine;
+ }
+ 
+ .drplist {
+   display: none;
+   position: relative;
+   background-color:rgb(88, 128, 147);
+   min-width: 150px;
+   box-shadow: 0px 9px 15px 0px rgba(0,0,0,0.2);
+   z-index: 9;
+ }
+ 
+ .drplist a {
+   float: none;
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   text-align: left;
+ }
+ 
+ .drp:hover .drplist {
+   display: block;
+ }
+ 
+ 
+ 
+ .overlaying {
+   position: absolute;
+   bottom: 100%;
+   left: 0;
+   right: 0;
+   background-color: #008CBA;
+   overflow: hidden;
+   width: 100%;
+   height:0;
+   transition: .5s ease;
+ }
+ 
+ .box:hover .overlaying {
+   bottom: 0;
+   height: 100%;
+ }
+ 
+ 
+ .inner {
+   color: white;
+   font-size: 25px;
+   position: relative;
+   top: 60%;
+   left: 60%;
+  
+   transform: translate(-50%, -50%);
+   text-align: center;
+ }
+ 
+ 
+ .box{
+   position: relative;
+   width: 100%;
+ }
+ 
+</style>
+<body style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+    
+     
+    <header style="background-color: aquamarine; height:70px;" class="top">
+        <ul style="list-style-type: none; padding-left: 5px;">
+           <li style="float: left; height:70px; width:100px; padding-left: 0px;">
+       <img src="amzing.jpg" style="height:60px; width:100px; padding-top:05px; padding-bottom: 05px;">
+           </li>
+           <li style="width:70px; padding-top: 5px; float:left; padding-right: 20px; padding-bottom: 5px;">
+            Deliver To <b style="font-size: 20px;"> <i class="fa-solid fa-location-dot"></i>India</b>
+           </li>
+           <li style="float:left; border-style: initial;">
+               <form style="padding-top:15px; padding-left:0px;">
+               <input type="search" style="width:600px; height:40px;"><input type="submit" style="height:40px;">
+               </form>
+               
+           </li>
+           <li style="float:left;">
+       <img src="download.jpg" style="width:40px; height:30px; padding-top:25px;">
+           </li>
+           <li style="width:120px; padding-top: 0px; padding-top: 0px; float:left; height:65px; padding-right: 5px;">
+       <p style="line-height: 20px;">Hello, Sign in <b style="font-size: 15px;">Accounts & Lists</b></p>
+           </li>
+           <li style="width:71px; padding-top: 12px; float:left; padding-right: 15px; padding-bottom: 12px;;">
+           Returns <b style="font-size: 16.5px;">& Orders</b>
+           </li>
+           <li style="float:left; padding-left: 0px;">
+               <img src="cart.jpg" style=" width:90px; height:50px; padding-top: 10px;">
+           </li>
+        </ul>
+           </header>
+           <div style="background-color: wheat; height:40px; margin-top:-15px; ">
+               <ul style="list-style-type: none; padding-top: 10px; padding-left: 5px; font-size:16px; ">
+           <b>    
+               <li style="float:left; padding-right: 25px; border:none;">
+                  <div class="drp" style="margin-top:-15px;">
+                       <button class="drpbtn">
+                           <i class="fa-solid fa-list-ul"></i> <b style="font-size: 16px;">All</b>
+                        
+                       </button>
+                       <div class="drplist">
+                         <a href="#">Tablet</a>
+                         <a href="#">Laptop</a>
+                         <a href="#">Various Options</a>
+                         <a href="#">Phone</a>
+                         <a href="#">Smart Watch</a>
+                         <a href="#">Clock</a>
+                       </div>
+                     </div> 
+               </li>
+               <li style="float:left; padding-right: 25px; border:none;">
+                <div class="drp" style="margin-top:-15px;">
+                   <button class="drpbtn">
+                       <b style="font-size: 16px;">Today's Deal</b>
+                     <i class="fa fa-caret-down"></i>
+                   </button>
+                   <div class="drplist">
+                     <a href="#">Latest Apps</a>
+                     <a href="#">Free Delivery</a>
+                     <a href="#">Price Negotiation</a>
+                     <a href="#">Lorem, ipsum dolor.</a>
+                     <a href="#">withdraw payment</a>
+                     
+                   </div>
+                 </div> 
+               </li>
+               <li style="float:left; padding-right: 25px; border:none;">
+                <a href="amazonElectronics.htm">Electronics</a>
+               </li> 
+               <li style="float:left; padding-right: 25px; border:none;">
+                <a href="amazonMobile.htm">Mobile</a>
+               </li>
+               <li style="float:left; padding-right: 25px; border:none;">
+               Gift Card
+               </li>
+               <li style="float:left; padding-right: 25px; border:none;">
+               Sell
+               </li>
+               </b>
+               </ul>
+           </div>
+
+    <div style ="height:1219px; width:250px; background-color: aquamarine; margin-top: 20px; "><marquee direction="down" style="behavior:slide; height :1219px;"><ul style="height: 629px; list-style-type: none;"><li>Lorem ipsum dolor sit.</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam?</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam?</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam?</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam?</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam?</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam?</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam?</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam?</li>
+
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam?</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam?</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam?</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam?</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam?</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam?</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam?</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam?</li>
+
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam?</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam?</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam?</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam?</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam?</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam?</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam?</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam?</li>
+
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam?</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam?</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam?</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam?</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam?</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam?</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam?</li>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam?</li>
+        </ul>
+    </marquee></div>
+
+
+</div >
+<div style="background-color:aquamarine; margin-left:270px; margin-right: 30px; margin-top: -1230px; height :450px; width:1000px; position: r">
+
+<div style="background-color: wheat; height:450px; width:290px; margin-left:20px; margin-top: -465px; ">
+    <div class="flipper" style="perspective:290px; background-color: transparent;"> 
+        <div class="flipinner" style="position: relative;
+        width: 100%;
+        height: 100%;
+       
+        transition: transform 0.8s;
+        transform-style: preserve-3d;">
+          <div class="flipfrontend">
+    <p style="padding-top:0px; padding-left: 30px;"><b style="font-size:19px;">Gaming Accessories</b></p>
+<hr>
+<img src="CA.jpg" class="resize" style="width:290px; height:320px; ">
+<p style="margin-top:0px;">Computer & Accessories</p>
+<a href="#" ><p style="text-align: center; margin-top: -05px;">Shop Now</p></a>
+</div>
+
+<div class="flipbackend">
+    <p style="padding-top:15px; padding-left: 30px;"><b style="font-size:19px;">Gaming Accessories</b></p>
+<hr>
+<img src="CA.jpg" class="resize" style="width:290px; height:320px; ">
+<p style="margin-top:0px;">Computer & Accessories</p>
+<a href="#" ><p style="text-align: center; margin-top: -05px;">Shop Now</p></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div  style="background-color: wheat; height:450px; width:290px; margin-left: 950px; margin-top:-465px;">
+    <div class="flipper" style="perspective:290px; background-color: transparent;"> 
+        <div class="flipinner" style="position: relative;
+        width: 100%;
+        height: 100%;
+       
+        transition: transform 0.8s;
+        transform-style: preserve-3d;">
+          <div class="flipfrontend">
+<p style="padding-top:15px; padding-left: 30px;"><b style="font-size:19px;">Gaming Accessories</b></p>
+<hr>
+<img  class="resize" src="DD.jpg" style="width:290px; height:320px; ">
+<a href="#" ><p style="text-align: center; margin-top: 20px; margin-left: -10px;">See all the deals</p></a>
+
+
+</div>
+<div class="flipbackend">
+    <p style="padding-top:15px; padding-left: 30px;"><b style="font-size:19px;">Gaming Accessories</b></p>
+<hr>
+<img src="CA.jpg" class="resize" style="width:290px; height:320px; ">
+<p style="margin-top:0px;">Computer & Accessories</p>
+<a href="#" ><p style="text-align: center; margin-top: -05px;">Shop Now</p></a>
+</div>
+</div>
+</div>
+</div>
+
+
+<div style="background-color: wheat; height:450px; width:290px; margin-left:620px; margin-top: -467px;">
+    <div class="flipper" style="perspective:290px; background-color: transparent;"> 
+        <div class="flipinner" style="position: relative;
+        width: 100%;
+        height: 100%;
+       
+        transition: transform 0.8s;
+        transform-style: preserve-3d;">
+          <div class="flipfrontend">
+    <p style="padding-top:15px; padding-left: 30px;"><b style="font-size:19px;">Gaming Accessories</b></p>
+    <hr>
+    <img class="resize" src="ER.jpg" style="width:290px; height:320px; ">
+<a href="#" ><p style="text-align: center; margin-top: 20px;">Learn More</p></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+
+
+
+
+<div style="background-color:aquamarine; margin-left:270px; margin-right: 30px; margin-top: 490px; height :450px; width:1000px; position: r">
+
+<div style="background-color: wheat; height:450px; width:290px; margin-left:20px; margin-top: -465px;">
+    <div class="flipper" style="perspective:290px; background-color: transparent;"> 
+        <div class="flipinner" style="position: relative;
+        width: 100%;
+        height: 100%;
+       
+        transition: transform 0.8s;
+        transform-style: preserve-3d;">
+          <div class="flipfrontend">
+   <p style="padding-top:15px; padding-left: 30px;"><b style="font-size:19px;">Gaming Accessories</b></p>
+<hr>
+<img src="CA.jpg" class="resize" style="width:290px; height:320px; ">
+<p style="margin-top:0px;">Computer & Accessories</p>
+<a href="#" ><p style="text-align: center; margin-top: -05px;">Shop Now</p></a>
+</div>
+<div class="flipbackend">
+    <p style="padding-top:15px; padding-left: 30px;"><b style="font-size:19px;">Gaming Accessories</b></p>
+<hr>
+<img src="CA.jpg" class="resize" style="width:290px; height:320px; ">
+<p style="margin-top:0px;">Computer & Accessories</p>
+<a href="#" ><p style="text-align: center; margin-top: -05px;">Shop Now</p></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="background-color: wheat; height:450px; width:290px; margin-left: 950px; margin-top:-465px;">
+    <div class="flipper" style="perspective:290px; background-color: transparent;"> 
+        <div class="flipinner" style="position: relative;
+        width: 100%;
+        height: 100%;
+       
+        transition: transform 0.8s;
+        transform-style: preserve-3d;">
+          <div class="flipfrontend">
+<p style="padding-top:15px; padding-left: 30px;"><b style="font-size:19px;">Gaming Accessories</b></p>
+<hr>
+<img src="DD.jpg" class="resize" style="width:290px; height:320px; ">
+<a href="#" ><p style="text-align: center; margin-top: 20px; margin-left: -10px;">See all the deals</p></a>
+<div class="flipbackend">
+    <p style="padding-top:15px; padding-left: 30px;"><b style="font-size:19px;">Gaming Accessories</b></p>
+<hr>
+<img src="CA.jpg" class="resize" style="width:290px; height:320px; ">
+<p style="margin-top:0px;">Computer & Accessories</p>
+<a href="#" ><p style="text-align: center; margin-top: -05px;">Shop Now</p></a>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<div style="background-color: wheat; height:450px; width:290px; margin-left:680px; margin-top: -467px;">
+    <div class="flipper" style="perspective:290px; background-color: transparent;"> 
+        <div class="flipinner" style="position: relative;
+        width: 100%;
+        height: 100%;
+       
+        transition: transform 0.8s;
+        transform-style: preserve-3d;">
+          <div class="flipfrontend">
+    <p style="padding-top:15px; padding-left: 30px;"><b style="font-size:19px;">Gaming Accessories</b></p>
+    <hr>
+    <img class="resize" src="ER.jpg" style="width:290px; height:320px; ">
+<a href="#" ><p style="text-align: center; margin-top: 20px;">Learn More</p></a>
+</div>
+<div class="flipbackend">
+    <p style="padding-top:15px; padding-left: 30px;"><b style="font-size:19px;">Gaming Accessories</b></p>
+<hr>
+<img src="CA.jpg" class="resize" style="width:290px; height:320px; ">
+<p style="margin-top:0px;">Computer & Accessories</p>
+<a href="#" ><p style="text-align: center; margin-top: -05px;">Shop Now</p></a>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<div style="background-color:aquamarine; margin-left:270px; margin-right: 30px; margin-top: 490px; height :450px; width:1000px; position: r">
+
+    <div style="background-color: wheat; height:450px; width:290px; margin-left:20px; margin-top: -465px;">
+       <p style="padding-top:15px; padding-left: 30px;"><b style="font-size:19px;">Gaming Accessories</b></p>
+    <hr>
+    <img class="resize" src="CA.jpg" style="width:290px; height:320px; ">
+    <p style="margin-top:0px;">Computer & Accessories</p>
+    <a href="#" ><p style="text-align: center; margin-top: -05px;">Shop Now</p></a>
+    </div>
+    <div class="flipbackend">
+        <p style="padding-top:15px; padding-left: 30px;"><b style="font-size:19px;">Gaming Accessories</b></p>
+    <hr>
+    <img src="CA.jpg" class="resize" style="width:290px; height:320px; ">
+    <p style="margin-top:0px;">Computer & Accessories</p>
+    <a href="#" ><p style="text-align: center; margin-top: -05px;">Shop Now</p></a>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div style="background-color: wheat; height:450px; width:290px; margin-left: 350px; margin-top:-465px;">
+    <p style="padding-top:15px; padding-left: 30px;"><b style="font-size:19px;">Gaming Accessories</b></p>
+    <hr>
+    <img class="resize" src="DD.jpg" style="width:290px; height:320px; ">
+    <a href="#" ><p style="text-align: center; margin-top: 20px; margin-left: -10px;">See all the deals</p></a>
+    
+    
+    </div>
+    <div style="background-color: wheat; height:450px; width:290px; margin-left:680px; margin-top: -467px;">
+        <p style="padding-top:15px; padding-left: 30px;"><b style="font-size:19px;">Gaming Accessories</b></p>
+        <hr>
+        <img class="resize" src="ER.jpg" style="width:290px; height:320px; ">
+    <a href="#" ><p style="text-align: center; margin-top: 20px;">Learn More</p></a>
+    </div>
+    
+    </div>
+
+
+
+
+
+    <div style="background-color:aquamarine; margin-left:270px; margin-right: 30px; margin-top: 490px; height :450px; width:1000px; position: r">
+
+        <div style="background-color: wheat; height:450px; width:290px; margin-left:20px; margin-top: -465px;">
+           <p style="padding-top:15px; padding-left: 30px;"><b style="font-size:19px;">Gaming Accessories</b></p>
+        <hr>
+        <img class="resize" src="CA.jpg" style="width:290px; height:320px; ">
+        <p style="margin-top:0px;">Computer & Accessories</p>
+        <a href="#" ><p style="text-align: center; margin-top: -05px;">Shop Now</p></a>
+        </div>
+        <div style="background-color: wheat; height:450px; width:290px; margin-left: 350px; margin-top:-465px;">
+        <p style="padding-top:15px; padding-left: 30px;"><b style="font-size:19px;">Gaming Accessories</b></p>
+        <hr>
+        <img class="resize" src="DD.jpg" style="width:290px; height:320px; ">
+        <a href="#" ><p style="text-align: center; margin-top: 20px; margin-left: -10px;">See all the deals</p></a>
+        
+        
+        </div>
+        <div style="background-color: wheat; height:450px; width:290px; margin-left:680px; margin-top: -467px;">
+            <p style="padding-top:15px; padding-left: 30px;"><b style="font-size:19px;">Gaming Accessories</b></p>
+            <hr>
+            <img class="resize" src="ER.jpg" style="width:290px; height:320px; ">
+        <a href="#" ><p style="text-align: center; margin-top: 20px;">Learn More</p></a>
+        </div>
+        
+        </div>
+
+        </body>
+        </html>

@@ -1,0 +1,6 @@
+li:hover {
+    color :blue;
+    border-color: black;
+    border-style :groove;
+    border-width: 2px;
+    }

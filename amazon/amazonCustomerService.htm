@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Service</title>
+</head>
+<link rel= "stylesheet" href="amazonCSS.css">
+<script src="https://kit.fontawesome.com/62b460f7d3.js" crossorigin="anonymous"></script>
+<style>
+li{
+    
+    padding-left: 20px;
+   
+    
+}
+
+a:active{
+
+    color : green;
+}
+
+li:active {
+ color : green;
+}
+
+/* li:hover {
+color :blue;
+border-color: black;
+border-style :groove;
+border-width: 2px;
+} */
+
+li:visited{
+color :magenta;
+
+}
+
+div:hover {
+background-color: lightgreen;
+
+}
+
+.drp .drpbtn {
+   
+   border: none;
+   outline: none;
+  
+   padding: 15px 15px;
+   background-color: inherit;
+   font-family: inherit;
+   overflow: hidden;
+  
+ }
+ 
+  .drp:hover .drpbtn {
+   background-color: aquamarine;
+ }
+ 
+ .drplist {
+   display: none;
+   position: relative;
+   background-color:rgb(88, 128, 147);
+   min-width: 150px;
+   box-shadow: 0px 9px 15px 0px rgba(0,0,0,0.2);
+   z-index: 9;
+ }
+ 
+ .drplist a {
+   float: none;
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   text-align: left;
+ }
+ 
+ .drp:hover .drplist {
+   display: block;
+ }
+ 
+ 
+ 
+ .overlaying {
+   position: absolute;
+   bottom: 100%;
+   left: 0;
+   right: 0;
+   background-color: #008CBA;
+   overflow: hidden;
+   width: 100%;
+   height:0;
+   transition: .5s ease;
+ }
+ 
+ .box:hover .overlaying {
+   bottom: 0;
+   height: 100%;
+ }
+ 
+ 
+ .inner {
+   color: white;
+   font-size: 25px;
+   position: relative;
+   top: 60%;
+   left: 60%;
+  
+   transform: translate(-50%, -50%);
+   text-align: center;
+ }
+ 
+ 
+ .box{
+   position: relative;
+   width: 100%;
+ }
+ 
+</style>
+<body style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+    
+    <header style="background-color: aquamarine; height:70px;" class="top">
+        <ul style="list-style-type: none; padding-left: 5px;">
+           <li style="float: left; height:70px; width:100px; padding-left: 0px;">
+       <img src="amzing.jpg" style="height:60px; width:100px; padding-top:05px; padding-bottom: 05px;">
+           </li>
+           <li style="width:70px; padding-top: 5px; float:left; padding-right: 20px; padding-bottom: 5px;">
+            Deliver To <b style="font-size: 20px;"> <i class="fa-solid fa-location-dot"></i>India</b>
+           </li>
+           <li style="float:left; border-style: initial;">
+               <form style="padding-top:15px; padding-left:0px;">
+               <input type="search" style="width:600px; height:40px;"><input type="submit" style="height:40px;">
+               </form>
+               
+           </li>
+           <li style="float:left;">
+       <img src="download.jpg" style="width:40px; height:30px; padding-top:25px;">
+           </li>
+           <li style="width:120px; padding-top: 0px; padding-top: 0px; float:left; height:65px; padding-right: 5px;">
+       <p style="line-height: 20px;">Hello, Sign in <b style="font-size: 15px;">Accounts & Lists</b></p>
+           </li>
+           <li style="width:71px; padding-top: 12px; float:left; padding-right: 15px; padding-bottom: 12px;;">
+           Returns <b style="font-size: 16.5px;">& Orders</b>
+           </li>
+           <li style="float:left; padding-left: 0px;">
+               <img src="cart.jpg" style=" width:90px; height:50px; padding-top: 10px;">
+           </li>
+        </ul>
+           </header>
+           <div style="background-color: wheat; height:40px; margin-top:-15px; ">
+               <ul style="list-style-type: none; padding-top: 10px; padding-left: 5px; font-size:16px; ">
+           <b>    
+               <li style="float:left; padding-right: 25px; border:none;">
+                  <div class="drp" style="margin-top:-15px;">
+                       <button class="drpbtn">
+                           <i class="fa-solid fa-list-ul"></i> <b style="font-size: 16px;">All</b>
+                        
+                       </button>
+                       <div class="drplist">
+                         <a href="#">Tablet</a>
+                         <a href="#">Laptop</a>
+                         <a href="#">Various Options</a>
+                         <a href="#">Phone</a>
+                         <a href="#">Smart Watch</a>
+                         <a href="#">Clock</a>
+                       </div>
+                     </div> 
+               </li>
+               <li style="float:left; padding-right: 25px; border:none;">
+                <div class="drp" style="margin-top:-15px;">
+                   <button class="drpbtn">
+                       <b style="font-size: 16px;">Today's Deal</b>
+                     <i class="fa fa-caret-down"></i>
+                   </button>
+                   <div class="drplist">
+                     <a href="#">Latest Apps</a>
+                     <a href="#">Free Delivery</a>
+                     <a href="#">Price Negotiation</a>
+                     <a href="#">Lorem, ipsum dolor.</a>
+                     <a href="#">withdraw payment</a>
+                     
+                   </div>
+                 </div> 
+               </li>
+               <li style="float:left; padding-right: 25px; border:none;">
+                <a href="amazonElectronics.htm">Electronics</a>
+               </li> 
+               <li style="float:left; padding-right: 25px; border:none;">
+                <a href="amazonMobile.htm">Mobile</a>
+               </li>
+               <li style="float:left; padding-right: 25px; border:none;">
+               Gift Card
+               </li>
+               <li style="float:left; padding-right: 25px; border:none;">
+               Sell
+               </li>
+               </b>
+               </ul>
+           </div>
+
+    <div style="margin-left: 100px; margin-right:100px; margin-top:20px; background-color: aqua;">
+         <p style="font-size:38px; margin-left: 30px;;">Hey!!!! Dear User If you have any query type in search box</p>
+        <input type="search" style="width:1100px; margin-left:30px; height:30px;" value="Search ">
+    </div>
+    <div style="margin-left: 100px; margin-right:100px; margin-top:20px; background-color: aqua;">
+
+        <p style="font-size:23px; margin-left: 30px; padding-bottom:10px; padding-top: 10px; padding-bottom: 10px;;">Various Functionalities that websites is offered</p>
+
+        <div style="height:100px; width:350px; background-color:wheat; margin-left:50px; padding-bottom:10px;">
+            <img src ="cl.jpg" style="height:75px; width:100px; margin-left:20px; margin-top:20px;">
+            <ul style="list-style-type: none; margin-left: 70px; margin-top: -100px;">
+     <li>   <p style="font-size:19px;">Your Orders</p>
+        </li>
+        <li style="font-size: 15px; margin-top: -15px;">
+         Change Order specifications
+        </li>
+        <li style="font-size: 15px; margin-top: 05px;;">
+         Order Tracking
+        </li>
+        
+     </ul>
+        </div>
+        <div style="height:100px; margin-left: 415px; margin-top : -110px; width:350px; background-color:red;  padding-bottom:10px;">
+            
+            <img src ="op.jpg" style="height:75px; width:100px; margin-left:20px; margin-top:20px;">
+            <ul style="list-style-type: none; margin-left: 70px; margin-top: -100px;">
+                <li>   <p style="font-size:19px;">Your Orders</p>
+                   </li>
+                   <li style="font-size: 15px; margin-top: -15px;">
+                    Change Order specifications
+                   </li>
+                   <li style="font-size: 15px; margin-top: 05px;;">
+                    Order Tracking
+                   </li>
+                   
+                </ul>
+        </div>
+        <div style="height:100px; width:350px; margin-top : -110px; margin-left: 780px; background-color:blue;  padding-bottom:10px;">
+            
+            <img src ="ho.jpg" style="height:75px; width:100px; margin-left:20px; margin-top:20px;">
+            <ul style="list-style-type: none; margin-left: 70px; margin-top: -100px;">
+                <li>   <p style="font-size:19px;">Return Option</p>
+                   </li>
+                   <li style="font-size: 15px; margin-top: -15px;">
+                    Return and Exchange Products
+                   </li>
+                   <li style="font-size: 15px; margin-top: 05px;;">
+                   Refund Eligibilty
+                   </li>
+                   
+                </ul>
+        </div>
+    </div>
+
+
+
+
+    <div style="margin-left: 100px; margin-right:100px; margin-top:20px; background-color: aqua;">
+
+   </div>
+   <div style="margin-left: 100px; margin-right:100px; margin-top:20px; background-color: aqua;">
+    
+
+
+       <div style="height:100px; width:350px; background-color:wheat; margin-left:50px; padding-bottom:10px;">
+        <img src ="acc.jpg" style="height:85px; width:100px; margin-left:20px; margin-top:10px;">
+        <ul style="list-style-type: none; margin-left: 70px; margin-top: -100px;">
+            <li>   <p style="font-size:19px;">Your Addresses</p>
+               </li>
+               <li style="font-size: 15px; margin-top: -15px;">
+                Update Delivery Address
+               </li>
+               <li style="font-size: 15px; margin-top: 05px;;">
+                Tracking
+               </li>
+               
+            </ul>
+       </div>
+       <div style="height:100px; margin-left: 415px; margin-top : -110px; width:350px; background-color:red;  padding-bottom:10px;">
+        <img src ="cre.jpg" style="height:75px; width:100px; margin-left:20px; margin-top:20px;">
+        <ul style="list-style-type: none; margin-left: 70px; margin-top: -100px;">
+            <li>   <p style="font-size:19px;">Your Orders</p>
+               </li>
+               <li style="font-size: 15px; margin-top: -15px;">
+                Change Order specifications
+               </li>
+               <li style="font-size: 15px; margin-top: 05px;;">
+                Order Tracking
+               </li>
+               
+            </ul>
+
+       </div>
+       <div style="height:100px; width:350px; margin-top : -110px; margin-left: 780px; background-color:blue;  padding-bottom:10px;">
+           
+        <img src ="ott.jpg" style="height:75px; width:100px; margin-left:20px; margin-top:20px;">
+        <ul style="list-style-type: none; margin-left: 70px; margin-top: -100px;">
+            <li>   <p style="font-size:19px;">My Account</p>
+               </li>
+               <li style="font-size: 15px; margin-top: -15px;">
+                Update Details
+               </li>
+               <li style="font-size: 15px; margin-top: 05px;;">
+                Modify Other Details
+               </li>
+               
+            </ul>
+       </div>
+   </div>
+
+
+
+
+
+   <div style="margin-left: 100px; margin-right:100px; margin-top:20px; background-color: aqua;">
+
+</div>
+<div style="margin-left: 100px; margin-right:100px; margin-top:20px; background-color: aqua;">
+  
+    <div style="height:100px; width:350px; background-color:wheat; margin-left:50px; padding-bottom:10px;">
+        <img src ="cv.jpg" style="height:75px; width:100px; margin-left:20px; margin-top:20px;">
+        <ul style="list-style-type: none; margin-left: 70px; margin-top: -100px;">
+            <li>   <p style="font-size:19px;">Payment Methods</p>
+               </li>
+               <li style="font-size: 15px; margin-top: -15px;">
+                Edit Payment options
+               </li>
+               <li style="font-size: 15px; margin-top: 05px;;">
+                COD and its Details
+               </li>
+               
+            </ul>
+    </div>
+    <div style="height:100px; margin-left: 415px; margin-top : -110px; width:350px; background-color:red;  padding-bottom:10px;">
+        
+        <img src ="cmp.jpg" style="height:75px; width:100px; margin-left:20px; margin-top:20px;">
+        <ul style="list-style-type: none; margin-left: 70px; margin-top: -100px;">
+            <li>   <p style="font-size:19px;">COVID-19 Updates</p>
+               </li>
+               <li style="font-size: 15px; margin-top: -15px;">
+                Impact on our Services
+               </li>
+               <li style="font-size: 15px; margin-top: 05px;;">
+                Zero Negligence Policy
+               </li>
+               
+            </ul>
+    </div>
+    <!-- <div style="height:100px; width:350px; margin-top : -110px; margin-left: 780px; background-color:blue;  padding-bottom:10px;">
+        <ul style="list-style-type: none; margin-left: 70px; margin-top: -100px;">
+            <li>   <p style="font-size:19px;">Your Orders</p>
+               </li>
+               <li style="font-size: 15px; margin-top: -15px;">
+                Change Order specifications
+               </li>
+               <li style="font-size: 15px; margin-top: 05px;;">
+                Order Tracking
+               </li>
+               
+            </ul>
+
+    </div> -->
+</div>
+    </body>
+    </html>

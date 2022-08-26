@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+</head>
+<link rel= "stylesheet" href="amazonCSS.css">
+<script src="https://kit.fontawesome.com/62b460f7d3.js" crossorigin="anonymous"></script>
+<style>
+    .img2:hover{
+
+transform:scale(1.1);
+
+}
+li{
+    
+    padding-left: 20px;
+   
+    
+}
+
+a:active{
+
+    color : green;
+}
+
+li:active {
+ color : green;
+}
+
+/* li:hover {
+color :blue;
+border-color: black;
+border-style :groove;
+border-width: 2px;
+} */
+
+li:visited{
+color :magenta;
+
+}
+.slidebox {
+        width: 1350px;
+        height: 450px;
+        background-color: peachpuff;
+        margin-left: auto;
+        margin-right: auto;
+       
+        text-align: center;
+        overflow: hidden;
+      }
+
+/* div:hover {
+background-color: lightgreen;
+
+} */
+/* body:hover{
+background-color: blanchedalmond;
+
+} */
+/* .sleek{
+        width: 1350px;
+        height: 350px;
+        
+        overflow: hidden;
+       
+      }
+
+.imggg{
+        width: 4050px;   
+        height: 350px;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 4s;
+        -moz-transition: left 4s;
+        -o-transition: left 4s;
+        transition: left 4s;
+      }
+      .sliderr {
+        float: left;
+        position: relative;
+      }
+      #sli1:target ~ .imggg {
+        left: -1300px;
+      }
+      #sli2:target ~ .imggg {
+        left: -1350px;
+      }
+      #sli3:target ~ .imggg {
+        left: -2700px;
+      }
+      .btn1 {
+        position: relative;
+        margin-top: -200px;
+        margin-left: -900px;;
+      }
+      .btn1 a {
+       
+        height: 20px;
+        width: 20px;
+        border-radius: 90px;
+        background-color: green;
+        display: inline-block;
+      } */
+
+      .slidebox {
+        width: 1350px;
+        height: 450px;
+        background-color: peachpuff;
+        margin-left: auto;
+        margin-right: auto;
+       
+        text-align: center;
+        overflow: hidden;
+      }
+      .imagg {
+        width: 4050px;
+       
+        height: 450px;
+        clear: both;
+        position: relative;
+        transition: left 2s;
+      }
+      .sleek {
+        float: left;
+     
+        position: relative;
+      }
+      #sli1:target ~ .imagg {
+        left: 0px;
+      }
+      #sli2:target ~ .imagg {
+        left: -1350px;
+      }
+      #sli3:target ~ .imagg {
+        left: -2700px;
+      }
+      .btn {
+        position: relative;
+        top: -20px;
+      }
+      .btn a {
+        margin-top: -39px;
+        display: inline-block;
+        height: 55px;
+        width: 55px;
+        border-radius: 50px;
+        background-color: lightgreen;
+      }
+
+      .drp .drpbtn {
+   
+   border: none;
+   outline: none;
+  
+   padding: 15px 15px;
+   background-color: inherit;
+   font-family: inherit;
+   overflow: hidden;
+  
+ }
+ 
+  .drp:hover .drpbtn {
+   background-color: aquamarine;
+ }
+ 
+ .drplist {
+   display: none;
+   position: relative;
+   background-color:rgb(88, 128, 147);
+   min-width: 150px;
+   box-shadow: 0px 9px 15px 0px rgba(0,0,0,0.2);
+   z-index: 9;
+ }
+ 
+ .drplist a {
+   float: none;
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   text-align: left;
+ }
+ 
+ .drp:hover .drplist {
+   display: block;
+ }
+ 
+ 
+ 
+ .overlaying {
+   position: absolute;
+   bottom: 100%;
+   left: 0;
+   right: 0;
+   background-color: #008CBA;
+   overflow: hidden;
+   width: 100%;
+   height:0;
+   transition: .5s ease;
+ }
+ 
+ .box:hover .overlaying {
+   bottom: 0;
+   height: 100%;
+ }
+ 
+ 
+ .inner {
+   color: white;
+   font-size: 25px;
+   position: relative;
+   top: 60%;
+   left: 60%;
+  
+   transform: translate(-50%, -50%);
+   text-align: center;
+ }
+ 
+ 
+ .box{
+   position: relative;
+   width: 100%;
+ }
+ 
+    </style>
+</style>
+<body style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+    
+    <header style="background-color: aquamarine; height:70px;" class="top">
+        <ul style="list-style-type: none; padding-left: 5px;">
+           <li style="float: left; height:70px; width:100px; padding-left: 0px;">
+       <img src="amzing.jpg" style="height:60px; width:100px; padding-top:05px; padding-bottom: 05px;">
+           </li>
+           <li style="width:70px; padding-top: 5px; float:left; padding-right: 20px; padding-bottom: 5px;">
+            Deliver To <b style="font-size: 20px;"> <i class="fa-solid fa-location-dot"></i>India</b>
+           </li>
+           <li style="float:left; border-style: initial;">
+               <form style="padding-top:15px; padding-left:0px;">
+               <input type="search" style="width:600px; height:40px;"><input type="submit" style="height:40px;">
+               </form>
+               
+           </li>
+           <li style="float:left;">
+       <img src="download.jpg" style="width:40px; height:30px; padding-top:25px;">
+           </li>
+           <li style="width:120px; padding-top: 0px; padding-top: 0px; float:left; height:65px; padding-right: 5px;">
+       <p style="line-height: 20px;">Hello, Sign in <b style="font-size: 15px;">Accounts & Lists</b></p>
+           </li>
+           <li style="width:71px; padding-top: 12px; float:left; padding-right: 15px; padding-bottom: 12px;;">
+           Returns <b style="font-size: 16.5px;">& Orders</b>
+           </li>
+           <li style="float:left; padding-left: 0px;">
+               <img src="cart.jpg" style=" width:90px; height:50px; padding-top: 10px;">
+           </li>
+        </ul>
+           </header>
+           <div style="background-color: wheat; height:40px; margin-top:-15px; ">
+               <ul style="list-style-type: none; padding-top: 10px; padding-left: 5px; font-size:16px; ">
+           <b>    
+               <li style="float:left; padding-right: 25px; border:none;">
+                  <div class="drp" style="margin-top:-15px;">
+                       <button class="drpbtn">
+                           <i class="fa-solid fa-list-ul"></i> <b style="font-size: 16px;">All</b>
+                        
+                       </button>
+                       <div class="drplist">
+                         <a href="#">Tablet</a>
+                         <a href="#">Laptop</a>
+                         <a href="#">Various Options</a>
+                         <a href="#">Phone</a>
+                         <a href="#">Smart Watch</a>
+                         <a href="#">Clock</a>
+                       </div>
+                     </div> 
+               </li>
+               <li style="float:left; padding-right: 25px; border:none;">
+                <div class="drp" style="margin-top:-15px;">
+                   <button class="drpbtn">
+                       <b style="font-size: 16px;">Today's Deal</b>
+                     <i class="fa fa-caret-down"></i>
+                   </button>
+                   <div class="drplist">
+                     <a href="#">Latest Apps</a>
+                     <a href="#">Free Delivery</a>
+                     <a href="#">Price Negotiation</a>
+                     <a href="#">Lorem, ipsum dolor.</a>
+                     <a href="#">withdraw payment</a>
+                     
+                   </div>
+                 </div> 
+               </li>
+               <li style="float:left; padding-right: 25px; border:none;">
+                Electronics
+               </li> 
+               <li style="float:left; padding-right: 25px; border:none;">
+               Mobile
+               </li>
+               <li style="float:left; padding-right: 25px; border:none;">
+               Gift Card
+               </li>
+               <li style="float:left; padding-right: 25px; border:none;">
+               Sell
+               </li>
+               </b>
+               </ul>
+           </div>
+    <div >
+        <h1 class = Ind style="text-align: center; margin-left:30px; margin-right: 30px; margin-top: 0px; z-index: 15; position: relative; height: 200px; width: 1300px; font-size: 50px; padding-top: 20px; color : white;">Electronics And Devices</h1>
+    </div>
+    
+
+    <div class="slidebox" style="background-color:red; margin-top:-250px;"><span id="sli1"></span>
+        <span id="sli2"></span>
+        <span id="sli3"></span>
+        <div class="imagg">
+          <img src="amz.jpg" class="sleek" width="1350" height="450" />
+          <img src="amz.jpg" class="sleek"  width="1350" height="450" />
+          <img src="amz.jpg" class="sleek"   width="1350" height="450"/>
+        </div>
+        <div class="btn">
+            <a href="#sli1"></a>
+            <a href="#sli2"></a>
+            <a href="#sli3"></a>
+          </div>
+      </div>
+
+    
+ 
+     <div style="background-color: aquamarine; height:70px; margin-top:0px; position: relative; z-index:10; ">
+         <ul style="list-style-type: none; padding-left: 5px;">
+            
+            <p style ="text-align: center;">
+            <li style=" margin-left : 400px; width:120px; padding-top: 25px; float:left; padding-right: 20px; padding-bottom: 5px;">
+             Mobile
+            </li>
+            
+            <li style="width:120px; padding-top: 0px; padding-top: 10px; float:left; height:65px; padding-right: 0px;">
+        <p style="line-height: 20px;">Phone</p>
+            </li>
+            <li style="width:100px; padding-top: 25px; float:left; padding-right: 5px; padding-bottom: 12px;;">
+            Laptop
+            </li>
+            <li style="width:120px; padding-top: 25px; float:left; padding-right: 15px; padding-bottom: 12px;;">
+                Smart Watch
+            </li>
+         </p>
+          
+         </ul>
+     </div>
+             <div style="background-color: wheat; height:60px; margin-top:-15px; ">
+                <ul style="list-style-type: none; padding-top: 10px; padding-left: 5px; font-size:16px; ">
+         
+                <li style="float:left; padding-left: 25px; margin-left: 100px;;">
+                  Electronics <i class="fa fa-caret-right" style="margin-left:10px;"></i>
+                </li>
+                <li style="float:left; padding-left: 25px;">
+                 Accesories
+                </li>
+               
+                </ul>
+            </div>
+        
+            <!-- <div style="background-color:aquamarine; margin-left:120px; margin-right: 180px; margin-top: 70px; height :300px; width:1070px;  position: relative; z-index: 0;">
+                <div style="background-color: wheat; height:290px; width:350px;">
+                    <img class= img1 src="NI.jpg" style="height:290px; width:350px;">
+               <div style="text-align: center; margin-left:-480px; margin-right: 30px; margin-top: -70px; z-index: 15; position: relative; height: 200px; width: 1300px; font-size: 25px;"> <p><b>NORTH INDIA</b></p></div>
+               
+                
+                </div>
+                <div style="background-color: wheat; height:290px; width:350px; margin-left:360px; margin-top: -290px;">
+                    <img class= img1 src="SI.jpg" style="height:290px; width:350px;">
+                    <div style="text-align: center; margin-left:-470px; margin-right: 30px; margin-top: -70px; z-index: 15; position: relative; height: 200px; width: 1300px; font-size: 25px;"> <p><b>SOUTH INDIA</b></p></div>
+                    
+                </div>
+                <div style="background-color: wheat; height:290px; width:350px; margin-left: 720px; margin-top:-290px;">
+                    <img  class= img1 src="WI.jpg" style="height:290px; width:350px;">
+                    <div style="text-align: center; margin-left:-470px; margin-right: 30px; margin-top: -70px; z-index: 15; position: relative; height: 200px; width: 1300px; font-size: 25px;"> <p><b>WEST INDIA</b></p></div>
+                    
+                </div>
+                
+            </div>
+            </div>
+
+
+            <div >
+                <div style="background-color:aquamarine; margin-left:120px; margin-right: 180px; margin-top: 10px; height :300px; width:1070px; margin-top:-00px; position: relative; z-index: 10;">
+                    <div style="background-color: wheat; height:290px; width:350px;">
+                        <img  class= img1 src="EI.jpg" style="height:290px; width:350px;">
+                        <div style="text-align: center; margin-left:-480px; margin-right: 30px; margin-top: -70px; z-index: 15; position: relative; height: 200px; width: 1300px; font-size: 25px;"> <p><b>EAST INDIA</b></p></div>
+                    
+                    
+                    </div>
+                    <div style="background-color: wheat; height:290px; width:350px; margin-left:360px; margin-top: -290px;">
+                        <img  class= img1 src="NEI.jpg" style="height:290px; width:350px;">
+                        <div style="text-align: center; margin-left:-470px; margin-right: 30px; margin-top: -70px; z-index: 15; position: relative; height: 200px; width: 1300px; font-size: 25px;"> <p><b>NORTH EAST INDIA</b></p></div>
+                        
+                    </div>
+                    <div style="background-color: wheat; height:290px; width:350px; margin-left: 720px; margin-top:-290px;">
+                   
+                        <img  class= img1 src="CI.jpg" style="height:290px; width:350px;">
+                        <div style="text-align: center; margin-left:-470px; margin-right: 30px; margin-top: -70px; z-index: 15; position: relative; height: 200px; width: 1300px; font-size: 25px;"> <p><b>CENTRAL INDIA</b></p></div>
+                        
+                    </div>
+                    
+                </div>
+                </div> -->
+                <br>
+            <hr>
+        
+        
+            <div >
+                <p style="text-align:center; font-size: 25PX;">Electronics</p>
+              
+    <!-- <div style="text-align: center;">
+        <form>
+            <button style="margin-right:10px; padding:10px 10px 10px 10px;">NORTH INDIA</button>
+            <button style="margin-right:10px; padding:10px 10px 10px 10px;">SOUTH INDIA</button>
+            
+            <button style="margin-right:10px; padding:10px 10px 10px 10px; background-color: darksalmon;">WEST INDIA</button>
+            <button style="margin-right:10px; padding:10px 10px 10px 10px;">EAST INDIA</button>
+            <button style="margin-right:10px; padding:10px 10px 10px 10px;">CENTRAL INDIA</button>
+            
+        </form>
+    </div> -->
+                
+                   
+                    <div style="background-color:aquamarine; margin-left:100px; margin-right: 100px; margin-top: 50px; height :250px; width:1190px;  position: relative; z-index: 10;">
+                        <div style="background-color: wheat; height:250px; width:290px;">
+                            <img class=img2 src="lap.jpg" style="height:200px; width:290px;">
+                            <p style="text-align: left; margin-left: 10px; margin-top: 10px; font-size: 18px;;">Refurbished laptop</p>
+                       
+                        </div>
+                        <div style="background-color: wheat; height:250px; width:290px; margin-left:300px; margin-top: -250px;">
+                            <img class=img2 src="lap1.jpg" style="height:200px; width:290px;">
+                            <p style="text-align: left; margin-left: 10px; margin-top: 10px; font-size: 18px;;">Refurbished laptop</p>
+                            
+                        </div>
+                        <div style="background-color: wheat; height:250px; width:290px; margin-left: 600px; margin-top:-250px;">
+                            <img class=img2 src="lap1.jpg" style="height:200px; width:290px;">
+                            
+                            <p style="text-align: left; margin-left: 10px; margin-top: 10px; font-size: 18px;;">Refurbished laptop</p>
+                           
+                        </div>
+                        <div style="background-color: wheat; height:250px; width:290px; margin-left:900px; margin-top: -250px;">
+                            <img class=img2 src="lap3.jpg" style="height:200px; width:290px;">
+                            <p style="text-align: left; margin-left: 10px; margin-top: 10px; font-size: 18px;;">Refurbished laptop</p>
+                           
+                        
+      
+                        </div>
+                   
+    </div>
+    </div>
+
+    <div style="background-color:aquamarine; margin-left:100px; margin-right: 100px; margin-top: 10px; height :250px; width:1190px;  position: relative; z-index: 10;">
+        <div style="background-color: wheat; height:250px; width:290px;">
+            <img class=img2 src="lap.jpg" style="height:200px; width:290px;">
+            <p style="text-align: left; margin-left: 10px; margin-top: 10px; font-size: 18px;;">Refurbished laptop</p>
+       
+        </div>
+        <div style="background-color: wheat; height:250px; width:290px; margin-left:300px; margin-top: -250px;">
+            <img class=img2 src="lap1.jpg" style="height:200px; width:290px;">
+            <p style="text-align: left; margin-left: 10px; margin-top: 10px; font-size: 18px;;">Refurbished laptop</p>
+            
+        </div>
+        <div style="background-color: wheat; height:250px; width:290px; margin-left: 600px; margin-top:-250px;">
+            <img class=img2 src="lap2.jpg" style="height:200px; width:290px;">
+            
+            <p style="text-align: left; margin-left: 10px; margin-top: 10px; font-size: 18px;;">Refurbished laptop</p>
+           
+        </div>
+        <div style="background-color: wheat; height:250px; width:290px; margin-left:900px; margin-top: -250px;">
+            <img class=img2 src="lap3.jpg" style="height:200px; width:290px;">
+            <p style="text-align: left; margin-left: 10px; margin-top: 10px; font-size: 18px;;">Refurbished laptop</p>
+           
+        
+
+        </div>
+   
+</div>
+</div>
+
+
+
+
+<div style="background-color:aquamarine; margin-left:100px; margin-right: 100px; margin-top: 10px; height :250px; width:1190px;  position: relative; z-index: 10;">
+    <div style="background-color: wheat; height:250px; width:290px;">
+        <img class=img2 src="lap4.jpg" style="height:200px; width:290px;">
+        <p style="text-align: left; margin-left: 10px; margin-top: 10px; font-size: 18px;;">Refurbished laptop</p>
+   
+    </div>
+    <div style="background-color: wheat; height:250px; width:290px; margin-left:300px; margin-top: -250px;">
+        <img class=img2 src="lap5.png" style="height:200px; width:290px;">
+        <p style="text-align: left; margin-left: 10px; margin-top: 10px; font-size: 18px;;">Refurbished laptop</p>
+        
+    </div>
+    <div style="background-color: wheat; height:250px; width:290px; margin-left: 600px; margin-top:-250px;">
+        <img class=img2 src="lap1.jpg" style="height:200px; width:290px;">
+        
+        <p style="text-align: left; margin-left: 10px; margin-top: 10px; font-size: 18px;;">Refurbished laptop</p>
+       
+    </div>
+    <div style="background-color: wheat; height:250px; width:290px; margin-left:900px; margin-top: -250px;">
+        <img class=img2 src="lap3.jpg" style="height:200px; width:290px;">
+        <p style="text-align: left; margin-left: 10px; margin-top: 10px; font-size: 18px;;">Refurbished laptop</p>
+       
+    
+
+    </div>
+
+</div>
+</div>
+
+
+
+  <div style="text-align: center; margin-top:60px;">
+        <form>
+            <button style="margin-right:10px; padding:20px 20px 20px 20px;">UNDER 499</button>
+            <button style="margin-right:10px; padding:20px 20px 20px 20px;">UNDER 699</button>
+            
+            <button style="margin-right:10px; padding:20px 20px 20px 20px; background-color: darksalmon;">UNDER 199</button>
+            <button style="margin-right:10px; padding:20px 20px 20px 20px;">UNDER 299</button>
+            <button style="margin-right:10px; padding:20px 20px 20px 20px;">UNDER 399</button>
+            
+        </form>
+    </div>
+
+
+
+    <div style="background-color:aquamarine; margin-left:100px; margin-right: 100px; margin-top: 60px; height :250px; width:1190px;  position: relative; z-index: 10;">
+        <div style="background-color: wheat; height:250px; width:290px;">
+            <img class=img2 src="lap1.jpg" style="height:200px; width:290px;">
+            <p style="text-align: left; margin-left: 10px; margin-top: 10px; font-size: 18px;;">Refurbished laptop</p>
+       
+        </div>
+        <div style="background-color: wheat; height:250px; width:290px; margin-left:300px; margin-top: -250px;">
+            <img class=img2 src="lap2.jpg" style="height:200px; width:290px;">
+            <p style="text-align: left; margin-left: 10px; margin-top: 10px; font-size: 18px;;">Refurbished laptop</p>
+            
+        </div>
+        <div style="background-color: wheat; height:250px; width:290px; margin-left: 600px; margin-top:-250px;">
+            <img class=img2 src="lap3.jpg" style="height:200px; width:290px;">
+            
+            <p style="text-align: left; margin-left: 10px; margin-top: 10px; font-size: 18px;;">Refurbished laptop</p>
+           
+        </div>
+        <div style="background-color: wheat; height:250px; width:290px; margin-left:900px; margin-top: -250px;">
+            <img class=img2 src="dd.jpg" style="height:200px; width:290px;">
+            <p style="text-align: left; margin-left: 10px; margin-top: 10px; font-size: 18px;;">Refurbished laptop</p>
+    
+        </div>
+    
+    </div>
+    </div>
+
+
+
+        </body>
+        </html>
